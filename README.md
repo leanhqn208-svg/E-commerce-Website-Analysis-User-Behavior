@@ -1,4 +1,4 @@
-# -Google-Analytics-eCommerce-Data-Exploration-with-BigQuery
+# E-commerce Website Analysis & User Behavior with BigQuery
 This repository showcases my SQL skills through a practical eCommerce data analysis project. Using Google BigQuery and the public Google Analytics sample dataset
 
 ---
