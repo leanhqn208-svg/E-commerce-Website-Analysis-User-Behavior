@@ -7,7 +7,7 @@ This repository showcases my SQL skills through a practical eCommerce data analy
 1. [📌 Overview](#-overview)  
 2. [📂 Dataset Description & Data Dictionary](#-dataset-description--data-structure)
 3. [🔎 Exploring the Dataset](#-exploring-the-dataset)
-4. [🚩 Final Conclusion](#-final-conclusion--recommendations)
+4. [🚩 Final Conclusion](#-final-conclusion)
 
 ---
 
