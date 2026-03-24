@@ -17,7 +17,7 @@ Through  SQL queries i handling nested event and raw data to extracted key busin
 The analysis focuses on traffic quality (bounce and conversion rates by source), revenue attribution across devices .
 
 ---
-## 📂 Dataset Description & Data Structure  
+## 📂 Dataset Description & Data Dictionary
 
 ### 📌 Data Source  
 The e-commerce dataset is stored in a public Google BigQuery dataset (`bigquery-public-data.google_analytics_sample`).
