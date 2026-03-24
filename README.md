@@ -5,7 +5,7 @@ This repository showcases my SQL skills through a practical eCommerce data analy
 
 ## 📑 Table of Contents  
 1. [📌 Overview](#-overview)  
-2. [📂 Dataset Description & Data Dictionary](#-dataset-description--data-structure)
+2. [📂 Data Source & Data Dictionary](#-data-source--data-structure)
 3. [🔎 Exploring the Dataset](#-exploring-the-dataset)
 4. [🚩 Final Conclusion](#-final-conclusion)
 
@@ -17,7 +17,7 @@ Through  SQL queries i handling nested event and raw data to extracted key busin
 The analysis focuses on traffic quality (bounce and conversion rates by source), revenue attribution across devices .
 
 ---
-## 📂 Dataset Description & Data Dictionary
+## 📂 Data Source & Data Dictionary
 
 ### 📌 Data Source  
 The e-commerce dataset is stored in a public Google BigQuery dataset (`bigquery-public-data.google_analytics_sample`).
