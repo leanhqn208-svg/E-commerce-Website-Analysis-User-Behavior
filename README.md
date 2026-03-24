@@ -5,7 +5,7 @@ This repository showcases my SQL skills through a practical eCommerce data analy
 
 ## 📑 Table of Contents  
 1. [📌 Overview](#-overview)  
-2. [📂 Data Source & Data Dictionary](#-data-source--data-structure)
+2. [📂 Data Source & Data Dictionary](#-data-source--data-dictionary)
 3. [🔎 Exploring the Dataset](#-exploring-the-dataset)
 4. [🚩 Final Conclusion](#-final-conclusion)
 
