@@ -78,7 +78,9 @@ Below are the key fields from the schema utilized in the SQL queries:
 
 <details>
   <summary><b>Query 02: Bounce rate per traffic source in July 2017</b></summary>
+  
   <br>
+  
   **🎯 Business Purpose:** To evaluate the quality of traffic from various acquisition channels by identifying which sources bring in the most non-interacting users. 
   
   **SQL Code:**
@@ -109,7 +111,7 @@ ORDER BY total_visits DESC;
   | facebook.com | 191 | 102 | 53.40% |
 
   **💡 Business Insights:**
-  * **Volume vs. Quality (Google Search):** While `google` drives the massive majority of traffic (38k+ visits), more than half of these users bounce (**51.56%**). This highlights a potential mismatch between the search intent and the actual landing page content.
+  * **Volume vs Quality :** While `google` drives the most of traffic (38k+ visits), more than half of these users bounce (**51.56%**). This highlights a potential mismatch between the search intent and the actual landing page content.
   * **Social Media Traffic is Highly Disengaged:** Visitors coming from `youtube.com` (**66.73%**) and `m.facebook.com` (**64.28%**) have critically high bounce rates. 
 
 </details>
