@@ -112,7 +112,7 @@ ORDER BY total_visits DESC;
 
   **💡 Business Insights:**
   * **Volume vs Quality :** While `google` drives the most of traffic (38k+ visits), more than half of these users bounce (**51.56%**). This highlights a potential mismatch between the search intent and the actual landing page content.
-  * **Social Media Traffic is Highly Disengaged:** Visitors coming from `youtube.com` (**66.73%**) and `m.facebook.com` (**64.28%**) have critically high bounce rates. 
+  * **Social Media Traffic:** Visitors coming from `youtube.com` (**66.73%**) and `m.facebook.com` (**64.28%**) have critically high bounce rates. 
 
 </details>
 <details>
