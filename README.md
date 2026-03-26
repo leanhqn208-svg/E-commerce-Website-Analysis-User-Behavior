@@ -78,9 +78,7 @@ Below are the key fields from the schema utilized in the SQL queries:
 
 <details>
   <summary><b>Query 02: Bounce rate per traffic source in July 2017</b></summary>
-  
   <br>
-  
   **🎯 Business Purpose:** To evaluate the quality of traffic from various acquisition channels by identifying which sources bring in the most non-interacting users. 
   
   **SQL Code:**
@@ -111,8 +109,8 @@ ORDER BY total_visits DESC;
   | facebook.com | 191 | 102 | 53.40% |
 
   **💡 Business Insights:**
-  * **Volume vs Quality :** While `google` drives the most of traffic (38k+ visits), more than half of these users bounce (**51.56%**). This highlights a potential mismatch between the search intent and the actual landing page content.
-  * **Social Media Traffic:** Visitors coming from `youtube.com` (**66.73%**) and `m.facebook.com` (**64.28%**) have critically high bounce rates. 
+  * **Volume vs. Quality (Google Search):** While `google` drives the massive majority of traffic (38k+ visits), more than half of these users bounce (**51.56%**). This highlights a potential mismatch between the search intent and the actual landing page content.
+  * Visitors coming from `youtube.com` (**66.73%**) and `m.facebook.com` (**64.28%**) have critically high bounce rates. 
 
 </details>
 <details>
@@ -120,7 +118,7 @@ ORDER BY total_visits DESC;
   
   <br>
 
-  **🎯 Business Purpose:** To measure the financial return of different marketing channels by tracking revenue on a weekly and monthly, to identify high-performing periods and attribute sales correctly.
+  **🎯 Business Purpose:** To measure the financial return of different marketing channels by tracking revenue on a weekly and monthly
 
   **SQL Code:**
   ```sql
@@ -172,8 +170,7 @@ ORDER BY total_visits DESC;
   | Week | 201726 | google | $5,330.57 |
 
   **💡 Business Insights:**
-  * **The "Quality over Quantity" Reality:** Connecting this with previous findings, while `google` drives the highest traffic volume, `(direct)` is the undisputed revenue driver, generating over 5 times the monthly revenue of Google (**$97.3k** vs **$18.7k**). High-volume traffic doesn't always equal high revenue.
-  * **Top Revenue Weeks:** Weeks 24 and 25 were the highest-earning periods in June for key channels direct. Investigating the specific drivers behind this  peak (e.g., payday effects, end-of-month promos) can help replicate this success in future campaigns.
+  * Connecting this with previous findings, while `google` drives the highest traffic volume, `(direct)` is the undisputed revenue driver, generating over 5 times the monthly revenue of Google (**$97.3k** vs **$18.7k**). High-volume traffic doesn't always equal high revenue.
 </details>
 
 <details>
@@ -228,7 +225,7 @@ ORDER BY total_visits DESC;
   | 2017-07 | 124.24 | 334.06 |
 
   **💡 Business Insights:**
-  * **Focused Buyers vs. Window Shoppers:** Non-purchasers view significantly more pages per user (~316-334 pages) compared to actual purchasers (~94-124 pages).
+  * **Focused Buyers vs Window Shoppers:** Non-purchasers view significantly more pages per user (~316-334 pages) compared to actual purchasers (~94-124 pages).
 This show that paying customers have high intent: they know exactly what they want, find it quickly, and check out.
   * **Poor Discovery:** The high number of pageviews for non-purchasers suggests they are struggling to find the right product. They might be lost in navigation, endlessly comparing items.
 
