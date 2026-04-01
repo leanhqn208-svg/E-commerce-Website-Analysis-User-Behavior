@@ -69,12 +69,13 @@ Below are the key fields from the schema utilized in the SQL queries:
   | 201701 | 64,694 | 257,708 | 713 |
   | 201702 | 62,192 | 233,373 | 733 |
   | 201703 | 69,931 | 259,522 | 993 |
+  
+</details>
 
   **💡 Business Insights:**
   * **Traffic Quality Improved:** Although visits dropped in February, transactions increased (from 713 to 733)
   * **Strong Conversion Growth:** The conversion rate (Transactions/Visits) grew from **1.10%** in Jan, to **1.18%** in Feb, peaking at **1.42%** in March.
 
-</details>
 
 <details>
   <summary><b>Query 02: Bounce rate per traffic source in July 2017</b></summary>
@@ -107,12 +108,14 @@ ORDER BY total_visits DESC;
   | dfa | 302 | 124 | 41.06% |
   | sites.google.com | 230 | 97 | 42.17% |
   | facebook.com | 191 | 102 | 53.40% |
+  </details>
+  
 
   **💡 Business Insights:**
   * **Volume vs. Quality (Google Search):** While `google` drives the massive majority of traffic (38k+ visits), more than half of these users bounce (**51.56%**). This highlights a potential mismatch between the search intent and the actual landing page content.
   * Visitors coming from `youtube.com` (**66.73%**) and `m.facebook.com` (**64.28%**) have critically high bounce rates. 
 
-</details>
+
 <details>
   <summary><b>Query 03: Revenue by traffic source by week, by month in June 2017</b></summary>
   
@@ -169,9 +172,10 @@ ORDER BY total_visits DESC;
   | Week | 201722 | (direct) | $6,888.90 |
   | Week | 201726 | google | $5,330.57 |
 
+  </details>
+
   **💡 Business Insights:**
   * Connecting this with previous findings, while `google` drives the highest traffic volume, `(direct)` is the undisputed revenue driver, generating over 5 times the monthly revenue of Google (**$97.3k** vs **$18.7k**). High-volume traffic doesn't always equal high revenue.
-</details>
 
 <details>
   <summary><b>Query 04: Average number of pageviews by purchaser type (June & July 2017)</b></summary>
@@ -224,12 +228,13 @@ ORDER BY total_visits DESC;
   | 2017-06 | 94.02 | 316.87 |
   | 2017-07 | 124.24 | 334.06 |
 
+  </details>
+
   **💡 Business Insights:**
   * **Focused Buyers vs Window Shoppers:** Non-purchasers view significantly more pages per user (~316-334 pages) compared to actual purchasers (~94-124 pages).
 This show that paying customers have high intent: they know exactly what they want, find it quickly, and check out.
   * **Poor Discovery:** The high number of pageviews for non-purchasers suggests they are struggling to find the right product. They might be lost in navigation, endlessly comparing items.
 
-</details>
 
 <details>
   <summary><b>Query 05: Average number of transactions per user that made a purchase in July 2017</b></summary>
@@ -257,10 +262,10 @@ This show that paying customers have high intent: they know exactly what they wa
   | :--- | :--- |
   | 201707 | 4.16390041493776 |
 
+  </details>
+
   **💡 Business Insights:**
   * This suggests moderate repeat buying behavior among customers within the month.
-
-</details>
 
 <details>
   <summary><b>Query 06: Average amount of money spent per session. Only include purchaser data in July 2017</b></summary>
@@ -289,9 +294,10 @@ ORDER BY Month;
   | :--- | :--- |
   | 2017-07 | 43.86
 
+</details>
+
   **💡 Business Insights:**
   * Paying customers spent an average of **$43.86 per session** in July 2017.
-</details>
 
 <details>
   <summary><b>Query 07: Other products purchased by customers who bought "YouTube Men's Vintage Henley" (July 2017)</b></summary>
@@ -343,9 +349,11 @@ ORDER BY quantity DESC;
   | Recycled Mouse Pad | 2 |
   | Red Shine 15 oz Mug | 2 |
 
+  </details>
+
   **💡 Business Insights:**
   * Men's Vintage Henley buyers frequently purchase summer accessories (sunglasses) and women's apparel
-</details>
+
 
 <details>
   <summary><b>Query 08: Calculate cohort map from product view to add to cart to purchase in Q1 2017</b></summary>
@@ -413,10 +421,11 @@ ORDER BY quantity DESC;
   | 201702 | 21,489 | 7,360 | 2,060 | 34.25% | 9.59% |
   | 201703 | 23,549 | 8,782 | 2,977 | 37.29% | 12.64% |
 
+  
+</details>
+
   **💡 Business Insights:**
   * **Growing Conversion Rates:** The shopping process improved every month.The final purchase rate grew steadily from 8.31% in January to 12.64% in March.
-
-</details>
 
 ---
 
