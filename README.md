@@ -109,12 +109,6 @@ ORDER BY total_visits DESC;
   | sites.google.com | 230 | 97 | 42.17% |
   | facebook.com | 191 | 102 | 53.40% |
   </details>
-  
-
-  **💡 Business Insights:**
-  * **Volume vs. Quality (Google Search):** While `google` drives the massive majority of traffic (38k+ visits), more than half of these users bounce (**51.56%**). This highlights a potential mismatch between the search intent and the actual landing page content.
-  * Visitors coming from `youtube.com` (**66.73%**) and `m.facebook.com` (**64.28%**) have critically high bounce rates. 
-
 
 <details>
   <summary><b>Query 03: Revenue by traffic source by week, by month in June 2017</b></summary>
@@ -175,7 +169,12 @@ ORDER BY total_visits DESC;
   </details>
 
   **💡 Business Insights:**
-  * Connecting this with previous findings, while `google` drives the highest traffic volume, `(direct)` is the undisputed revenue driver, generating over 5 times the monthly revenue of Google (**$97.3k** vs **$18.7k**). High-volume traffic doesn't always equal high revenue.
+  
+* By connecting Queries 02 and 03, we can see : this website gain revenue base on brand loyalty rather than discovery.
+
+ **The Insight:** While Google Search brings in the sheer volume of users, they bounce at 51.5%, and Social (YouTube/Facebook) bounces at over 64%. Yet, Direct traffic generates almost 84% of the monthly revenue ($97k vs Google's $18k). Most of our revenue comes from loyal customers who already know the website. Our marketing on Google and Social Media is bringing in people, but they aren't buying.
+**Strategic Implication:** Your acquisition channels (Social, Organic/Paid Search) are deeply misaligned with your landing page experience. Users clicking from YouTube or Facebook expect a specific story or product, but hit a wall of friction upon landing. The marketing budget spent on these channels is currently bleeding money. 
+**Actionable Step:** We need to improve the landing pages for Google and Social Media visitors so they stay and shop, rather than leaving right away.
 
 <details>
   <summary><b>Query 04: Average number of pageviews by purchaser type (June & July 2017)</b></summary>
@@ -232,8 +231,8 @@ ORDER BY total_visits DESC;
 
   **💡 Business Insights:**
   * **Focused Buyers vs Window Shoppers:** Non-purchasers view significantly more pages per user (~316-334 pages) compared to actual purchasers (~94-124 pages).
-This show that paying customers have high intent: they know exactly what they want, find it quickly, and check out.
-  * **Poor Discovery:** The high number of pageviews for non-purchasers suggests they are struggling to find the right product. They might be lost in navigation, endlessly comparing items.
+A user willing to click through 300+ pages wants to buy something (high intent), but they cannot find what they are looking for, or they are hitting out-of-stock roadblocks, broken filters, or a confusing site architecture. This also show that paying customers: they know exactly what they want, find it quickly, and check out.
+  * **Actionable Step:** Audit the search bar, filters, and categories to identify why non-purchasers are scrolling through 300+ pages without finding products
 
 
 <details>
@@ -264,9 +263,6 @@ This show that paying customers have high intent: they know exactly what they wa
 
   </details>
 
-  **💡 Business Insights:**
-  * This suggests moderate repeat buying behavior among customers within the month.
-
 <details>
   <summary><b>Query 06: Average amount of money spent per session. Only include purchaser data in July 2017</b></summary>
   
@@ -295,9 +291,10 @@ ORDER BY Month;
   | 2017-07 | 43.86
 
 </details>
+Combining Queries 05 and 06 found a unusual e-commerce purchasing pattern.
+The Insight: In July, the average paying customer completed 4.16 transactions in a single month. For a standard B2C apparel/merchandise store, ordering 4 times a month is high. However, the Average Order Value (AOV) is relatively low at $43.86.
 
-  **💡 Business Insights:**
-  * Paying customers spent an average of **$43.86 per session** in July 2017.
+Actionable Step: Since these users buy frequently but spend little per session, implementing a loyalty program, or aggressive "Buy 2 Get 1" could increase the AOV without hurting their high purchase frequency.
 
 <details>
   <summary><b>Query 07: Other products purchased by customers who bought "YouTube Men's Vintage Henley" (July 2017)</b></summary>
@@ -350,9 +347,6 @@ ORDER BY quantity DESC;
   | Red Shine 15 oz Mug | 2 |
 
   </details>
-
-  **💡 Business Insights:**
-  * Men's Vintage Henley buyers frequently purchase summer accessories (sunglasses) and women's apparel
 
 
 <details>
@@ -423,19 +417,20 @@ ORDER BY quantity DESC;
 
   
 </details>
+Queries 01 and 08 show an interesting trend in the first quarter of the year:
 
-  **💡 Business Insights:**
-  * **Growing Conversion Rates:** The shopping process improved every month.The final purchase rate grew steadily from 8.31% in January to 12.64% in March.
-
+* **The Insight:** From January to March, total traffic dropped, but the final purchase rate actually went up steadily from 8.3% to 12.6%.
+* **Strategic Implication:** Having fewer visitors isn't a bad thing if the site is getting better at turning them into buyers. The quality of our traffic is improving.
 ---
 
 ## 🚩 Final Conclusion
 ---
-
-Overall, this project used Google BigQuery to explore e-commerce data and understand how customers behave on the website. 
-The analysis showed which traffic sources bring the most valuable buyers. 
-Non-purchasers view 3x more pages than actual buyers (300+ vs. 100+).
-This suggests that non-buyers are getting lost or struggling with product discovery.
+* Working with the Google Analytics dataset helped me bridge the gap between technical SQL skills and business strategy:
+* **CTEs (WITH):** Structured complex logic (like conversion funnels) into clean, readable queries.
+* **Nested Data:** Used UNNEST() in BigQuery to extract information from complex arrays.
+* **KPI Calculations:** Applied advanced aggregations (SUM, COUNT(DISTINCT)) to measure metrics like Bounce Rate and Average Order Value.
+* **Date Functions:** Used FORMAT_DATE and PARSE_DATE to analyze time-based trends.
+* **Business Mindset:** Learned to use SQL not just to pull data, but to uncover actionable insights and solve real business problems.
 ---
 **Thank you for reading!** Feel free to reach out or connect if you have any questions or feedback regarding this analysis.
 
